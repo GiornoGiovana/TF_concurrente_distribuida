@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router";
 import { Button } from "./Button";
+import { useCosto } from "../App";
 
 export const Result = () => {
   const navigator = useNavigate();
+  const { costo } = useCosto();
 
   const handleHome = () => {
     navigator("/");
@@ -19,7 +21,7 @@ export const Result = () => {
       <div className="result__container">
         <h2>El costo aproximado del proyecto es</h2>
         <h1>
-          <span>PEN</span> 7,486,458.15
+          <span>PEN</span> {costo}
         </h1>
 
         <div className="result__container-btns">
