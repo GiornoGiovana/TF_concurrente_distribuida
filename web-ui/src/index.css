@@ -23,10 +23,25 @@ a {
 .header {
   background: #B5B4F9;
   padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header a {
   color: #545355;
+}
+
+.header-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-btns a {
+  background-color: white;
+  padding: .25rem 1.5rem;
+  border-radius: .5rem;
 }
 
 .normal {
@@ -101,6 +116,7 @@ a {
   gap: 30px;
   align-items: center;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .calculation__container {
@@ -123,6 +139,20 @@ a {
 }
 
 .calculation__form-div input {
+  outline: none;
+  background: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 12px;
+  width: 80%;
+}
+
+.calculation__form-epocas {
+  display: flex;
+  gap: 20px;
+}
+
+.calculation__form-epocas input {
   outline: none;
   background: white;
   border: none;
@@ -184,4 +214,13 @@ a {
     width: 350px;
     height: 250px;
   }
+}
+
+.calculation__form-div select {
+  outline: none;
+  background: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 12px;
+  width: 90%;
 }
